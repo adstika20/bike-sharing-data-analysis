@@ -1,6 +1,4 @@
-# Submission-Data-Analyst-Penyewaan-Sepeda
-
-# Dashboard Penyewaan Sepeda
+# Interactive Dashboard for Bike Rental Analysis Using Streamlit
 
 Proyek ini adalah sebuah dashboard interaktif untuk menganalisis data penyewaan sepeda menggunakan Streamlit dan beberapa library Python seperti `plotly` dan `statsmodels`.
 
