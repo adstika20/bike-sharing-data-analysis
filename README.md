@@ -1,49 +1,88 @@
 # Interactive Dashboard for Bike Rental Analysis Using Streamlit
 
-Proyek ini adalah sebuah dashboard interaktif untuk menganalisis data penyewaan sepeda menggunakan Streamlit dan beberapa library Python seperti `plotly` dan `statsmodels`.
+🔍 Sebuah Dashboard interaktif untuk mengeksplorasi dan menganalisis tren penyewaan sepeda menggunakan **Python**, **Plotly**, dan **Streamlit**.  
+Dirancang untuk menyajikan wawasan berbasis data dengan tampilan yang intuitif dan mudah digunakan.
 
-## Persyaratan Sistem
+---
 
-Sebelum menjalankan aplikasi ini, pastikan sistem Anda memiliki persyaratan berikut:
+## 1. Ringkasan Proyek
 
-- Python 3.8 atau yang lebih baru
-- `pip` untuk mengelola paket Python
+Proyek ini dibuat sebagai bagian dari proyek akhir analisis data. Mencakup:
+- Proses lengkap analisis data dari awal hingga kesimpulan
+- Pembuatan dasbor interaktif menggunakan **Streamlit**
+- Visualisasi berbasis **Plotly** untuk menjawab pertanyaan bisnis yang relevan
 
-## Cara Menjalankan Aplikasi
+---
 
-### 1. Clone Repository
+## 2. Key Outcomes / Preview
+
+Dasbor ini menyajikan:
+- 📅 Analisis tren penyewaan berdasarkan hari dan jam  
+- 🌦️ Perbandingan cuaca dengan pola penyewaan  
+- 🧍‍♂️ Segmentasi berdasarkan tipe pengguna  
+- 🔄 Fluktuasi penggunaan musiman dan harian
+
+![Pratinjau Dashboard](https://github.com/adstika20/bike-sharing-data-analysis/blob/main/Preview%20Dashboard.png)
+
+Try the live version 👉 [Buka Aplikasi](https://adstika20-submission-data-analyst-penyewaan-sepeda-main-2ljso0.streamlit.app/)
+
+---
+
+## 3. Struktur Proyek
+
 ```bash
+Submission-Data-Analyst-Penyewaan-Sepeda/
+│
+├── data/
+│   ├── day.csv
+│   └── hour.csv
+│
+├── main.py                # Kode utama dashboard Streamlit
+├── eda_notebook.ipynb     # Notebook 
+├── requirements.txt       # Daftar dependensi
+└── README.md              # Dokumentasi proyek
+```
+
+## 4. Installation & Setup
+
+### Requirements
+- Python ≥ 3.8
+- pip (Python package installer)
+- (Optional) virtualenv or conda for isolated environments
+
+### Installation
+```
+# Clone the repo
 git clone https://github.com/adstika20/Submission-Data-Analyst-Penyewaan-Sepeda.git
 cd Submission-Data-Analyst-Penyewaan-Sepeda
-```
 
-### 2️⃣ **Membuat Virtual Environment**  
-Buat dan aktifkan lingkungan virtual untuk memastikan dependensi tidak bentrok:  
-```bash
+# Create and activate virtual environment
 python -m venv env
-```
-#### Aktifkan lingkungan virtual:
-```bash
+# Windows
 .\env\Scripts\activate
-```
-### 3️⃣ Instal Dependencies
-```bash
+# macOS/Linux
+source env/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
-```
-### 4️⃣ Jalankan Aplikasi Streamlit
-```bash
+
+# Run the Streamlit dashboard
 streamlit run main.py
 ```
-### 📊 Dataset
-Berikut dua dataset yang digunakan dalam aplikasi ini:
+## 5. Dataset
 
-- `day.csv`: Dataset penyewaan sepeda berdasarkan hari.
-- `hour.csv`: Dataset penyewaan sepeda per jam.
-**Catatan:** Pastikan kedua berkas CSV ini berada di direktori yang sama dengan `main.py` agar aplikasi dapat berjalan dengan baik.
+Dataset yang digunakan dalam proyek ini berasal dari sumber berikut:
 
-### 📦 Library dan Teknologi yang Digunakan
-- `streamlit`: Untuk membangun aplikasi web interaktif.
-- `plotly`: Untuk visualisasi data.
-- `pandas`: Untuk manipulasi data.
-- `numpy`: Untuk operasi numerik.
-- `statsmodels`: Untuk analisis statistik.
+🔗 [Unduh Dataset - Google Drive](https://drive.google.com/file/d/1RaBmV6Q6FYWU4HWZs80Suqd7KQC34diQ/view)
+
+Dataset terdiri atas dua file utama:
+
+- `day.csv` — Data penyewaan sepeda **per hari**
+- `hour.csv` — Data penyewaan sepeda **per jam**
+
+## 🙌 Penutup
+Proyek ini merupakan bagian dari proyek akhir pembelajaran sebagai analis data.
+Menunjukkan kemampuan untuk:
+- Menerjemahkan kebutuhan bisnis ke dalam pertanyaan analitis
+- Mengolah data menjadi informasi yang mudah dipahami
+- Membangun aplikasi berbasis data secara interaktif.
